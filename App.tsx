@@ -9,13 +9,17 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 
-import { OnboardingNavigator } from './src/navigation/Onboarding.navigator';
+import { Navigator } from 'src/navigation/Navigator';
+import { store } from 'src/app/store'
+import { Provider } from 'react-redux'
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <OnboardingNavigator />
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Navigator />
+      </NavigationContainer>
+    </Provider>
   );
 };
 

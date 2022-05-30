@@ -1,14 +1,14 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 
-import { WelcomeScreen } from 'src/screens/WelcomeScreen';
+import { MainScreen } from 'src/screens/MainScreen';
 
 import { ROUTES } from './routes';
 
 const Stack = createNativeStackNavigator();
 
-export const OnboardingNavigator = () => (
+export const Navigator = () => (
   <Stack.Navigator initialRouteName="Home">
-    <Stack.Screen name={ROUTES.Welcome} component={WelcomeScreen} />
+    <Stack.Screen name={ROUTES.Main} component={MainScreen} />
   </Stack.Navigator>
 );

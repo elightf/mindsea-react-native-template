@@ -1,3 +1,3 @@
 export enum ROUTES {
-  Welcome = 'Welcome',
+  Main = 'Main',
 }
